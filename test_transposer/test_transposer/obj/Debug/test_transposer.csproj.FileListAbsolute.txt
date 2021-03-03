@@ -1,0 +1,10 @@
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\bin\Debug\test_transposer.exe.config
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\bin\Debug\test_transposer.exe
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\bin\Debug\test_transposer.pdb
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.csprojAssemblyReference.cache
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.frmMain.resources
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.Properties.Resources.resources
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.csproj.GenerateResource.cache
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.csproj.CoreCompileInputs.cache
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.exe
+E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.pdb
