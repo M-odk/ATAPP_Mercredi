@@ -8,3 +8,13 @@ E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_tra
 E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.csproj.CoreCompileInputs.cache
 E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.exe
 E:\michi\CFPT\cfpt_scolariteTOTAL\cfpt_annee3\ATAPP3\Bonvin\TPI_working\test_transposer\test_transposer\obj\Debug\test_transposer.pdb
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\bin\Debug\test_transposer.exe.config
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\bin\Debug\test_transposer.exe
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\bin\Debug\test_transposer.pdb
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.csprojAssemblyReference.cache
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.frmMain.resources
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.Properties.Resources.resources
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.csproj.GenerateResource.cache
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.csproj.CoreCompileInputs.cache
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.exe
+C:\Users\michi.odk\Desktop\P3A\TPI_C#\ATAPP_Mercredi\test_transposer\test_transposer\obj\Debug\test_transposer.pdb

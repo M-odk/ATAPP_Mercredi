@@ -50,8 +50,8 @@ namespace test_transposer
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            // afficher les notes dans les combobox 
-            AfficherNotesDansCombobox();
+            // afficher les notes dans les combobox (majeur de base)
+            AfficherNotesDansCombobox(false); 
         }
 
         private void btnTransposer_Click(object sender, EventArgs e)
@@ -65,34 +65,53 @@ namespace test_transposer
             GammeArrivee = cmbTonaliteTransposee.SelectedIndex;
 
             // Envoyer à la méthode l'entrée utilisateur et afficher le résultat
-            tbxResultDepart.Text = LesNotes.AfficherNotesdeDepart(notesUser);
+            tbxResultDepart.Text = LesNotes.NotesDepart(notesUser);
             tbxResultTransposee.Text = LesNotes.TransposerNotes(GammeDeDepart, GammeArrivee);
 
 
         }
 
-        /// <summary>
-        /// Parcours la liste de notes pour ajouter chaque note dans les combobox
+        /// <summary> 
+        /// Ajouter les notes qui appartiennent soit à la liste majeure soit à la liste des notes mineures.
         /// </summary>
-        public void AfficherNotesDansCombobox()
+        /// <param name="mineur"> Savoir si le radioButton est coché ou non</param>
+        public void AfficherNotesDansCombobox(bool mineur)
         {
-            // Ajouter les items dans les combobox 
-            foreach (var note in LesNotes.Notes)
-            {
-                cmbTonaliteDepart.Items.Add(note);
-                cmbTonaliteTransposee.Items.Add(note);
-            }
+            // vider les comboboxs
+            cmbTonaliteDepart.Items.Clear();
+            cmbTonaliteTransposee.Items.Clear();
 
+            if (mineur == true)
+            { 
+                
+                // Ajouter les items dans les combobox 
+                foreach (var note in LesNotes.NotesMin)
+                {
+                    cmbTonaliteDepart.Items.Add(note);
+                    cmbTonaliteTransposee.Items.Add(note);
+                }
+            }
+            else
+            {
+                // Ajouter les items dans les combobox 
+                foreach (var note in LesNotes.NotesMaj)
+                {
+                    cmbTonaliteDepart.Items.Add(note);
+                    cmbTonaliteTransposee.Items.Add(note);
+                }
+            }
         }
 
+        private void rdbMineur_CheckedChanged(object sender, EventArgs e)
+        {
+            bool mineur = rdbMineur.Checked;
 
+            AfficherNotesDansCombobox(mineur);
+        }
 
-        //public int RecupererItemID()
-        //{
-
-        //}
-
-
-
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // message
+        }
     }
 }

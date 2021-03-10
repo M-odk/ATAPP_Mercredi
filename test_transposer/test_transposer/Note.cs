@@ -1,7 +1,7 @@
 ﻿/*
  * Projet: Transposition de notes
  * 
- * Description: Note --> classe qui représente une note de musique
+ * Description: Note --> classe qui représente une note de musique ( après on utilisera la librairie Manufaktura qui contient la classe note)
  * 
  * ODAKA M. || CFPT-I || IFDA-P3A
  * 

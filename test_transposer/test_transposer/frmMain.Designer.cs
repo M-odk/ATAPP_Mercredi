@@ -38,12 +38,13 @@ namespace test_transposer
             this.tbxResultTransposee = new System.Windows.Forms.TextBox();
             this.btnTransposer = new System.Windows.Forms.Button();
             this.lblEntry = new System.Windows.Forms.Label();
+            this.rdbMineur = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // cmbTonaliteDepart
             // 
             this.cmbTonaliteDepart.FormattingEnabled = true;
-            this.cmbTonaliteDepart.Location = new System.Drawing.Point(87, 152);
+            this.cmbTonaliteDepart.Location = new System.Drawing.Point(87, 215);
             this.cmbTonaliteDepart.Name = "cmbTonaliteDepart";
             this.cmbTonaliteDepart.Size = new System.Drawing.Size(121, 21);
             this.cmbTonaliteDepart.TabIndex = 0;
@@ -52,7 +53,7 @@ namespace test_transposer
             // cmbTonaliteTransposee
             // 
             this.cmbTonaliteTransposee.FormattingEnabled = true;
-            this.cmbTonaliteTransposee.Location = new System.Drawing.Point(312, 152);
+            this.cmbTonaliteTransposee.Location = new System.Drawing.Point(312, 215);
             this.cmbTonaliteTransposee.Name = "cmbTonaliteTransposee";
             this.cmbTonaliteTransposee.Size = new System.Drawing.Size(121, 21);
             this.cmbTonaliteTransposee.TabIndex = 1;
@@ -61,7 +62,7 @@ namespace test_transposer
             // lblNotesDepart
             // 
             this.lblNotesDepart.AutoSize = true;
-            this.lblNotesDepart.Location = new System.Drawing.Point(84, 234);
+            this.lblNotesDepart.Location = new System.Drawing.Point(84, 334);
             this.lblNotesDepart.Name = "lblNotesDepart";
             this.lblNotesDepart.Size = new System.Drawing.Size(92, 13);
             this.lblNotesDepart.TabIndex = 2;
@@ -70,7 +71,7 @@ namespace test_transposer
             // lblNotesTransposee
             // 
             this.lblNotesTransposee.AutoSize = true;
-            this.lblNotesTransposee.Location = new System.Drawing.Point(84, 373);
+            this.lblNotesTransposee.Location = new System.Drawing.Point(84, 473);
             this.lblNotesTransposee.Name = "lblNotesTransposee";
             this.lblNotesTransposee.Size = new System.Drawing.Size(95, 13);
             this.lblNotesTransposee.TabIndex = 3;
@@ -87,7 +88,7 @@ namespace test_transposer
             // 
             // tbxResultDepart
             // 
-            this.tbxResultDepart.Location = new System.Drawing.Point(87, 261);
+            this.tbxResultDepart.Location = new System.Drawing.Point(87, 361);
             this.tbxResultDepart.Multiline = true;
             this.tbxResultDepart.Name = "tbxResultDepart";
             this.tbxResultDepart.ReadOnly = true;
@@ -96,7 +97,7 @@ namespace test_transposer
             // 
             // tbxResultTransposee
             // 
-            this.tbxResultTransposee.Location = new System.Drawing.Point(87, 398);
+            this.tbxResultTransposee.Location = new System.Drawing.Point(87, 498);
             this.tbxResultTransposee.Multiline = true;
             this.tbxResultTransposee.Name = "tbxResultTransposee";
             this.tbxResultTransposee.ReadOnly = true;
@@ -106,7 +107,7 @@ namespace test_transposer
             // btnTransposer
             // 
             this.btnTransposer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnTransposer.Location = new System.Drawing.Point(193, 550);
+            this.btnTransposer.Location = new System.Drawing.Point(201, 627);
             this.btnTransposer.Name = "btnTransposer";
             this.btnTransposer.Size = new System.Drawing.Size(127, 62);
             this.btnTransposer.TabIndex = 7;
@@ -124,12 +125,25 @@ namespace test_transposer
             this.lblEntry.TabIndex = 8;
             this.lblEntry.Text = "Entrez les notes que vous voulez transposer. Ex : Do Re Mi";
             // 
+            // rdbMineur
+            // 
+            this.rdbMineur.AutoSize = true;
+            this.rdbMineur.Location = new System.Drawing.Point(211, 150);
+            this.rdbMineur.Name = "rdbMineur";
+            this.rdbMineur.Size = new System.Drawing.Size(104, 17);
+            this.rdbMineur.TabIndex = 9;
+            this.rdbMineur.TabStop = true;
+            this.rdbMineur.Text = "Tonalité Mineure";
+            this.rdbMineur.UseVisualStyleBackColor = true;
+            this.rdbMineur.CheckedChanged += new System.EventHandler(this.rdbMineur_CheckedChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(532, 721);
+            this.Controls.Add(this.rdbMineur);
             this.Controls.Add(this.lblEntry);
             this.Controls.Add(this.btnTransposer);
             this.Controls.Add(this.tbxResultTransposee);
@@ -141,6 +155,7 @@ namespace test_transposer
             this.Controls.Add(this.cmbTonaliteDepart);
             this.Name = "frmMain";
             this.Text = "transposer clé et tonalité";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,6 +173,7 @@ namespace test_transposer
         private System.Windows.Forms.TextBox tbxResultTransposee;
         private System.Windows.Forms.Button btnTransposer;
         private System.Windows.Forms.Label lblEntry;
+        private System.Windows.Forms.RadioButton rdbMineur;
     }
 }
 

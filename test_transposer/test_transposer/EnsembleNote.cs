@@ -16,48 +16,73 @@ using System.Threading.Tasks;
 
 namespace test_transposer
 {
-    // une note contient un nom (pour l'instant)
+   
     class EnsembleNote
     {
         // variables
-        private List<string> notes;
-        private List<string> transposition;
+        private List<string> notesMaj;
+        private List<string> transpoMaj;
+        private List<string> notesMin;
+        private List<string> transpoMin;
         private string _gammeDepart;
         private string _gammeArrive;
         private int _indexNote;
 
 
         // propriétés
-        public List<string> Notes { get => notes; }
+        public List<string> NotesMaj { get => notesMaj; }
         public string GammeDepart { get => _gammeDepart; set => _gammeDepart = value; }
         public string GammeArrive { get => _gammeArrive; set => _gammeArrive = value; }
         public int IndexNote { get => _indexNote; set => _indexNote = value; }
-        public List<string> Transposition { get => transposition; set => transposition = value; }
+        public List<string> Transposition { get => transpoMaj; set => transpoMaj = value; }
+        public List<string> TranspoMin { get => transpoMin; set => transpoMin = value; }
+        public List<string> NotesMin { get => notesMin; set => notesMin = value; }
 
 
         // Constructeurs
         public EnsembleNote()
         {
-            // Implémenter la liste des notes et y ajouter les notes
-            notes = new List<string>();
-            notes.Add("Do unisson ");
-            notes.Add("Re");
-            notes.Add("Mi");
-            notes.Add("Fa");
-            notes.Add("Sol");
-            notes.Add("La");
-            notes.Add("Si");
-            notes.Add("Do octave");
+            // Implémenter les liste majeures et mineures des notes et y ajouter les notes
+            notesMaj = new List<string>();
+            notesMaj.Add("Do unisson ");
+            notesMaj.Add("Re");
+            notesMaj.Add("Mi");
+            notesMaj.Add("Fa");
+            notesMaj.Add("Sol");
+            notesMaj.Add("La");
+            notesMaj.Add("Si");
+            notesMaj.Add("Do octave");
 
-            transposition = new List<string>();
-            transposition.Add("Do unisson ");
-            transposition.Add("Re");
-            transposition.Add("Mi");
-            transposition.Add("Fa");
-            transposition.Add("Sol");
-            transposition.Add("La");
-            transposition.Add("Si");
-            transposition.Add("Do octave");
+            transpoMaj = new List<string>();
+            transpoMaj.Add("Do unisson ");
+            transpoMaj.Add("Re");
+            transpoMaj.Add("Mi");
+            transpoMaj.Add("Fa");
+            transpoMaj.Add("Sol");
+            transpoMaj.Add("La");
+            transpoMaj.Add("Si");
+            transpoMaj.Add("Do octave");
+
+            notesMin = new List<string>();
+            notesMin.Add("Do unisson ");
+            notesMin.Add("Re");
+            notesMin.Add("Mi mineur");
+            notesMin.Add("Fa");
+            notesMin.Add("Sol");
+            notesMin.Add("La mineur");
+            notesMin.Add("Si");
+            notesMin.Add("Do octave");
+
+            transpoMin = new List<string>();
+            transpoMin.Add("Do unisson ");
+            transpoMin.Add("Re");
+            transpoMin.Add("Mi");
+            transpoMin.Add("Fa");
+            transpoMin.Add("Sol");
+            transpoMin.Add("La");
+            transpoMin.Add("Si");
+            transpoMin.Add("Do octave");
+
 
         }
 
@@ -68,7 +93,7 @@ namespace test_transposer
         /// </summary>
         /// <param name="noteUser"></param>
         /// <returns></returns>
-        public string AfficherNotesdeDepart(string noteUser)
+        public string NotesDepart(string noteUser)
         {
             // Récupérer chaque notes 
             string[] noteUserArray = noteUser.Split(new char[] { '-', ' ', '/', '.' });
@@ -99,7 +124,7 @@ namespace test_transposer
                 for (int i = 0; i < intervalle; i++)
                 {
                     // retirer jusqu'a être à l'intervalle que l'on veut
-                    transposition.RemoveAt(0);
+                    transpoMaj.RemoveAt(0);
                 }
                 
             }
@@ -114,6 +139,18 @@ namespace test_transposer
 
             }
             return result;
+        }
+
+
+        /// <summary>
+        /// Convertir le tableau de notes pour les avoir en texte (affichage) 
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+
+            // savoir si c'est mineur ou majeur et afficher les listes qui correspondent
+            return base.ToString();
         }
     }
 }
