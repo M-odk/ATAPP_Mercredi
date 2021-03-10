@@ -18,3 +18,5 @@
 
 03.03.2021 : Partie transposition de la v1 à faire
 
+10.03.2021 : Schema sur papier du projet (sans inclure la librairie Manufaktura.controls) 
+
