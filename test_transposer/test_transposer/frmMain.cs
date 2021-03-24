@@ -21,10 +21,9 @@ using System.Windows.Forms;
 
 /* TODO - QUESTIONS
  * 
- * Set/Get comme il faut les properties dans EnsembleNote
- * Récupérer les index des comboboxs : https://www.codeproject.com/Questions/430566/how-to-get-ID-on-an-item-in-combo-box
- * Faire le calcul entre les gammes (sans les clés, bémols diez etc...)
- * Afficher le résultat 
+ * Transposer()
+ * Verifier si les entrées utilisateurs sont bien des notes 
+ * Implémenter toutes les notes et ensuite créer chaque gammes (majeure et sa relative = pareil)
  * 
  */
 
@@ -59,17 +58,27 @@ namespace test_transposer
             // récupérer l'entrée utilisateur 
             notesUser = tbxNotesPartition.Text;
 
+            // Vérifier si l'utilisateur a bien entré quelque chose
+            if (String.IsNullOrEmpty(notesUser))
+            {
+                lblEntry.ForeColor = Color.Red;
+            }
+
+                                                                        
+
             // Récupérer la gamme depuis laquelle on doit transposer
             GammeDeDepart = cmbTonaliteDepart.SelectedIndex;
             // Récupérer la gamme dans laquelle on doit transposer
             GammeArrivee = cmbTonaliteTransposee.SelectedIndex;
 
-            // Envoyer à la méthode l'entrée utilisateur et afficher le résultat
+            // afficher les notes que l'utilisateur veut transposer (notes de départ)
             tbxResultDepart.Text = LesNotes.NotesDepart(notesUser);
+            // afficher la transposition des notes 
             tbxResultTransposee.Text = LesNotes.TransposerNotes(GammeDeDepart, GammeArrivee);
 
 
         }
+
 
         /// <summary> 
         /// Ajouter les notes qui appartiennent soit à la liste majeure soit à la liste des notes mineures.
@@ -82,8 +91,8 @@ namespace test_transposer
             cmbTonaliteTransposee.Items.Clear();
 
             if (mineur == true)
-            { 
-                
+            {
+
                 // Ajouter les items dans les combobox 
                 foreach (var note in LesNotes.NotesMin)
                 {
@@ -102,16 +111,17 @@ namespace test_transposer
             }
         }
 
-        private void rdbMineur_CheckedChanged(object sender, EventArgs e)
-        {
-            bool mineur = rdbMineur.Checked;
-
-            AfficherNotesDansCombobox(mineur);
-        }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             // message
+        }
+
+        private void ckbMineur_CheckedChanged(object sender, EventArgs e)
+        {
+            bool mineur = ckbMineur.Checked;
+
+            AfficherNotesDansCombobox(mineur);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace test_transposer
     class EnsembleNote
     {
         // variables
-        private List<string> notesMaj;
+        private List<string> notesMaj;                  // pas en string mais en Note !
         private List<string> transpoMaj;
         private List<string> notesMin;
         private List<string> transpoMin;
@@ -40,11 +40,11 @@ namespace test_transposer
 
 
         // Constructeurs
-        public EnsembleNote()
+        public EnsembleNote()  
         {
             // Implémenter les liste majeures et mineures des notes et y ajouter les notes
             notesMaj = new List<string>();
-            notesMaj.Add("Do unisson ");
+            notesMaj.Add("Do");
             notesMaj.Add("Re");
             notesMaj.Add("Mi");
             notesMaj.Add("Fa");
@@ -53,15 +53,15 @@ namespace test_transposer
             notesMaj.Add("Si");
             notesMaj.Add("Do octave");
 
-            transpoMaj = new List<string>();
-            transpoMaj.Add("Do unisson ");
-            transpoMaj.Add("Re");
-            transpoMaj.Add("Mi");
-            transpoMaj.Add("Fa");
-            transpoMaj.Add("Sol");
-            transpoMaj.Add("La");
-            transpoMaj.Add("Si");
-            transpoMaj.Add("Do octave");
+            //transpoMaj = new List<string>();
+            //transpoMaj.Add("Do unisson ");
+            //transpoMaj.Add("Re");
+            //transpoMaj.Add("Mi");
+            //transpoMaj.Add("Fa");
+            //transpoMaj.Add("Sol");
+            //transpoMaj.Add("La");
+            //transpoMaj.Add("Si");
+            //transpoMaj.Add("Do octave");
 
             notesMin = new List<string>();
             notesMin.Add("Do unisson ");
@@ -73,15 +73,15 @@ namespace test_transposer
             notesMin.Add("Si");
             notesMin.Add("Do octave");
 
-            transpoMin = new List<string>();
-            transpoMin.Add("Do unisson ");
-            transpoMin.Add("Re");
-            transpoMin.Add("Mi");
-            transpoMin.Add("Fa");
-            transpoMin.Add("Sol");
-            transpoMin.Add("La");
-            transpoMin.Add("Si");
-            transpoMin.Add("Do octave");
+            //transpoMin = new List<string>();
+            //transpoMin.Add("Do unisson ");
+            //transpoMin.Add("Re");
+            //transpoMin.Add("Mi");
+            //transpoMin.Add("Fa");
+            //transpoMin.Add("Sol");
+            //transpoMin.Add("La");
+            //transpoMin.Add("Si");
+            //transpoMin.Add("Do octave");
 
 
         }
@@ -116,15 +116,14 @@ namespace test_transposer
         {
             int intervalle = noteArrivee - noteDepart;
             string result = "";
+
             // ca veut dire que la gamme va monter
             if (intervalle > 0 )
             {
                 // il faut décaler du nombre d'intervalle vers le haut (aigu)
-                // même vision pour la liste, 1er élément s'enlève
                 for (int i = 0; i < intervalle; i++)
                 {
-                    // retirer jusqu'a être à l'intervalle que l'on veut
-                    transpoMaj.RemoveAt(0);
+                    
                 }
                 
             }
@@ -139,18 +138,6 @@ namespace test_transposer
 
             }
             return result;
-        }
-
-
-        /// <summary>
-        /// Convertir le tableau de notes pour les avoir en texte (affichage) 
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-
-            // savoir si c'est mineur ou majeur et afficher les listes qui correspondent
-            return base.ToString();
         }
     }
 }

@@ -38,7 +38,7 @@ namespace test_transposer
             this.tbxResultTransposee = new System.Windows.Forms.TextBox();
             this.btnTransposer = new System.Windows.Forms.Button();
             this.lblEntry = new System.Windows.Forms.Label();
-            this.rdbMineur = new System.Windows.Forms.RadioButton();
+            this.ckbMineur = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // cmbTonaliteDepart
@@ -125,17 +125,16 @@ namespace test_transposer
             this.lblEntry.TabIndex = 8;
             this.lblEntry.Text = "Entrez les notes que vous voulez transposer. Ex : Do Re Mi";
             // 
-            // rdbMineur
+            // ckbMineur
             // 
-            this.rdbMineur.AutoSize = true;
-            this.rdbMineur.Location = new System.Drawing.Point(211, 150);
-            this.rdbMineur.Name = "rdbMineur";
-            this.rdbMineur.Size = new System.Drawing.Size(104, 17);
-            this.rdbMineur.TabIndex = 9;
-            this.rdbMineur.TabStop = true;
-            this.rdbMineur.Text = "Tonalité Mineure";
-            this.rdbMineur.UseVisualStyleBackColor = true;
-            this.rdbMineur.CheckedChanged += new System.EventHandler(this.rdbMineur_CheckedChanged);
+            this.ckbMineur.AutoSize = true;
+            this.ckbMineur.Location = new System.Drawing.Point(223, 151);
+            this.ckbMineur.Name = "ckbMineur";
+            this.ckbMineur.Size = new System.Drawing.Size(105, 17);
+            this.ckbMineur.TabIndex = 10;
+            this.ckbMineur.Text = "Tonalité Mineure";
+            this.ckbMineur.UseVisualStyleBackColor = true;
+            this.ckbMineur.CheckedChanged += new System.EventHandler(this.ckbMineur_CheckedChanged);
             // 
             // frmMain
             // 
@@ -143,7 +142,7 @@ namespace test_transposer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(532, 721);
-            this.Controls.Add(this.rdbMineur);
+            this.Controls.Add(this.ckbMineur);
             this.Controls.Add(this.lblEntry);
             this.Controls.Add(this.btnTransposer);
             this.Controls.Add(this.tbxResultTransposee);
@@ -173,7 +172,7 @@ namespace test_transposer
         private System.Windows.Forms.TextBox tbxResultTransposee;
         private System.Windows.Forms.Button btnTransposer;
         private System.Windows.Forms.Label lblEntry;
-        private System.Windows.Forms.RadioButton rdbMineur;
+        private System.Windows.Forms.CheckBox ckbMineur;
     }
 }
 
