@@ -1,22 +1,36 @@
 # ATELIER APPLICATION DU MERCREDI
 
+## Projet principal de l'atelier
+
 **Projet** : Test_transposer
 
 **Nom** : Michi O.
 
-**Description** : Projet réalisé dans le cadre de la préparation au TPI. Faire une application qui permet de transposer des notes. Commencer par une version simple pour comprendre le principe de transposition.
+**Description** : Projet réalisé dans le cadre de la préparation au TPI. Faire une application qui permet de transposer des notes. Commencer par une version simple pour comprendre le principe de transposition. 
 
-**DATES**
+**Lien du LogBook** : [Logbook](LogBook-ATaPP.md)
 
-***
+## Projets et documents complémentaires 
 
-10.02.2021 : Commencement du projet
+Les travaux complémentaires sont avancés principalement pendant l'atelier application du mardi et parfois pendant celui du mercredi.
 
-17.02.2021 : vacances scolaires
+**Librairie Manufaktura.controls** 
 
-24.02.2021 : absence
+Librairie qui permet de faire plusieurs choses dont : 
+- lire des fichiers XML
+- afficher des partitions 
+- créer des partitions (notes, mesures, titre etc..) 
+- enregistrer sous format PDF
+- etc ...
 
-03.03.2021 : Partie transposition de la v1 à faire
+Site officiel pour le téléchargement : [http://manufaktura-programow.pl](http://manufaktura-programow.pl/)
 
-10.03.2021 : Schema sur papier du projet (sans inclure la librairie Manufaktura.controls) 
+**Découverte de la librairie et mise en pratique**
+
+- Découvrir les classes et savoir à quoi elles servent 
+- Essayer l'affichage d'une partition
+- Travailler sur la transposition avec la librairie (NOK)
+
+
+
 
