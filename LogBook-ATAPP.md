@@ -67,4 +67,20 @@ TODO : régléchir à comment transposer
             };
 
 ```
- 
+ 31.03.2021
+
+- Changement du tableau de transposition en créant une classe Gamme
+- Permet de stocker trois valeurs dans le dictionnaire au lieu de deux
+- Affichage et classe gamme qui contient l'armature et la liste de notes
+
+```c#
+    /* Dictionnaire contenant une clé (Nom qui sera affiché dans la liste déroulante) --> valeur (Gamme(string, List<Note>)) */
+            gammesMajeures = new Dictionary<string, Gamme >()
+            {
+                 {"Sol b", Gamme("6b", GM_Solb) },
+                 {"Re b", Gamme("6b", GM_Solb) },
+               //  etc ...
+            };
+
+```
+- Avancement sur des projets de modules à rendre cette semaine (M152)
