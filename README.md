@@ -8,7 +8,7 @@
 
 **Description** : Projet réalisé dans le cadre de la préparation au TPI. Faire une application qui permet de transposer des notes. Commencer par une version simple pour comprendre le principe de transposition. 
 
-**Lien du LogBook** : [Logbook](LogBook-ATaPP.md)
+**Lien du LogBook** : [Logbook](LogBook-ATAPP.md)
 
 ## Projets et documents complémentaires 
 
