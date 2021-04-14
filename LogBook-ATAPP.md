@@ -83,4 +83,7 @@ TODO : régléchir à comment transposer
             };
 
 ```
+Annotation sur ce qu'il y a besoin en gros pour le projet
+![schéma](annotation-classes.jpg)
+
 - Avancement sur des projets de modules à rendre cette semaine (M152)

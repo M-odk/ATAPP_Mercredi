@@ -37,14 +37,13 @@ namespace test_transposer
         string notesUser = ""; // entrée utilisateur
         int GammeDeDepart = 0; //gamme de départ
         int GammeArrivee = 0; // gamme après transposition
-        EnsembleNote LesNotes;
-
+        EnsembleGamme gamme;
 
 
         public frmMain()
         {
             InitializeComponent();
-            LesNotes = new EnsembleNote();
+           // LesNotes = new EnsembleNote();
         }
 
         private void frmMain_Load(object sender, EventArgs e)

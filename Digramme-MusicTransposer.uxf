@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>140</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>NOTE
+-
+- _nom : string
+
+-
+ctor Note(string nom)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>300</y>
+      <w>200</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>EnsembleGamme
+-
+- noteaMaj : List&lt;Note&gt;;
+- noteaMin : List&lt;Note&gt;;
+- transpoMaj : List&lt;Note&gt;;
+- transpoMin : List&lt;Note&gt;;
+
+-
+Ctor EnsembleGamme()
+
+-
++ NotesDepart(string User): string
++ TransposerNotes(int noteDepart, int noteArrivee) : string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>90</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>80</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

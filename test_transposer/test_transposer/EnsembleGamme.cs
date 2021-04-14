@@ -1,14 +1,4 @@
-﻿/*
- * Projet: Transposition de notes
- * 
- * Description: EnsembleNote --> classe pour transposer les notes et intéragir avec la vue (Form)
- * 
- * ODAKA M. || CFPT-I || IFDA-P3A
- * 
- * Date: 27.01.2021
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace test_transposer
 {
-   
     class EnsembleGamme
     {
         // variables
@@ -40,7 +29,7 @@ namespace test_transposer
 
 
         // Constructeurs
-        public EnsembleGamme()  
+        public EnsembleGamme()
         {
             // Implémenter les liste majeures et mineures des notes et y ajouter les notes
             notesMaj = new List<string>();
@@ -118,14 +107,14 @@ namespace test_transposer
             string result = "";
 
             // ca veut dire que la gamme va monter
-            if (intervalle > 0 )
+            if (intervalle > 0)
             {
                 // il faut décaler du nombre d'intervalle vers le haut (aigu)
                 for (int i = 0; i < intervalle; i++)
                 {
-                    
+
                 }
-                
+
             }
             else if (intervalle < 0) // la gamme va descendre
             {
